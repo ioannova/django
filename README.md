@@ -65,4 +65,4 @@ DATABASES = {
 
 ## 7. Add user permission for projet
 
-`sudo chown -R $USER:USER .
+`sudo chown -R $USER:USER .`
