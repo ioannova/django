@@ -1,4 +1,4 @@
-# 1. Dockerfile
+## 1. Dockerfile
 
 ```
 FROM python:3
@@ -10,7 +10,7 @@ RUN pip install -r requirements.txt
 COPY . /code/
 ```
 
-# 2. requirements.txt
+## 2. requirements.txt
 
 ```
 Django>=2.0,<3.0
@@ -18,7 +18,7 @@ psycopg2>=2.7,<3.0
 
 ```
 
-# 3. docker-compose
+## 3. docker-compose
 
 ```
 version: '3'
@@ -38,11 +38,13 @@ services:
 ```
 
 
-# 4. Create project
+## 4. Create project
 
 `docker-compose run web django-admin startproject myproject .`
 
-# 4. Connect project on database postgres in composeexample/settings.py
+## 5. Connect project on database postgres
+
+`$vim composeexample/settings.py`
 
 ```
 DATABASES = {
@@ -56,11 +58,11 @@ DATABASES = {
 }
 ```
 
-# 5. Running project
+## 6. Running project
 
 `docker-compose up`
 
 
-# 6. Add user permission for projet
+## 7. Add user permission for projet
 
 `sudo chown -R $USER:USER .
