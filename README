@@ -64,3 +64,6 @@ DATABASES = {
 # 6. Add user permission for projet
 
 `sudo chown -R $USER:USER .
+
+
+Tutorial: [Docker](https://docs.docker.com/compose/django/)
